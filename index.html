@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editor de Imágenes con Canvas API</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <h1>Editor de Imágenes con Canvas API</h1>
+    <p>Cargue una imagen y aplique diferentes efectos y filtros utilizando la API Canvas.</p>
+    <input type="file" id="file-input"><br><br>
+    <label for="brightness-slider">Brillo:</label>
+    <input type="range" id="brightness-slider" min="0" max="200" value="100"><br>
+    <label for="contrast-slider">Contraste:</label>
+    <input type="range" id="contrast-slider" min="0" max="200" value="100"><br>
+    <label for="blur-slider">Desenfoque:</label>
+    <input type="range" id="blur-slider" min="0" max="10" value="0"><br><br>
+    <button id="grayscale-btn">Escala de Grises</button>
+    <button id="sepia-btn">Sepia</button>
+    <button id="invert-btn">Invertir</button>
+    <button id="save-btn">Guardar imagen</button>
+    <button id="reset-btn">Restablecer</button><br><br>
+    <canvas id="canvas"></canvas>
+    <script src="editor.js"></script>
+  </body>
+</html>
